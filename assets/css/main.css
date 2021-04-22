@@ -755,8 +755,8 @@ body {
 
     .offer {
         height: 840px;
-        width: 1000px;
-        /* overflow-x: hidden; */
+        /* width: 100%; */
+        overflow-x: hidden;
     }
     .offer .offer__title {
         width: 332px;
@@ -821,7 +821,7 @@ body {
         width: 100%;
     }
     .what .what__top--content {
-        width: 116%;
+        width: 100%;
         border: none;
     }
     .what .what__top--content .content__description {
