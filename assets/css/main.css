@@ -1,0 +1,983 @@
+@font-face {
+    font-family: "NB Akademie Pro";
+    src: url("../lib/font/NB Akademie Pro - Regular.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "NB Akademie Pro", sans-serif;
+    overflow-x: hidden;
+    /* font-weight: bold; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.mb-18 {
+    margin-bottom: 18px;
+}
+.mb-26 {
+    margin-bottom: 26px;
+}
+.btn {
+    background-color: #be952b;
+    font-family: NB Akademie Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+
+    color: #ffffff;
+
+    border: none;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover {
+    color: #ffffff;
+    background-color: #a37a12;
+}
+.btn:active {
+    background-color: #be952b;
+}
+
+.title {
+    position: relative;
+    font-family: NB Akademie Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+/* Layout Style End */
+
+/* Header Style Start */
+.header {
+    position: relative;
+
+    width: 100%;
+    height: 679px;
+
+    background-image: url("../img/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header .header__topnav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+    list-style: none;
+
+    padding: 30px 0;
+    margin: 0 30px;
+
+    border-bottom: 1px solid #ffff;
+}
+.header .header__topnav .topnav__subnav {
+    display: flex;
+    list-style: none;
+
+    font-family: NB Akademie Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+}
+.header .header__topnav .topnav__subnav li {
+    margin: 0 10px;
+}
+.header .header__topnav li {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.header .header__topnav li a {
+    text-decoration: none;
+
+    font-family: NB Akademie Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+.header .header__description {
+    position: absolute;
+    width: 786px;
+    height: 203px;
+    left: 35px;
+    top: 325px;
+
+    font-family: NB Akademie Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 65px;
+    line-height: 70px;
+    /* or 108% */
+
+    color: #ffffff;
+}
+
+.header .header--btn {
+    position: absolute;
+    width: 209px;
+    height: 51px;
+    left: 81.635vw;
+    top: 494px;
+}
+/* Header Style End */
+
+/* About Style Start */
+.about {
+    width: 100%;
+    min-height: 542px;
+
+    padding: 24px 35px 46px 35px;
+    background-color: #000;
+    color: #fff;
+}
+/* For mobile */
+.about__chart {
+    display: none;
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 0px;
+}
+.about__chart .chart--wrap {
+    width: 62.651vw;
+    height: 326.5px;
+    margin: 0 auto;
+
+    background-image: url("../img/WBCAPTIALGRAPH1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.about .about__left-box {
+    width: 36%;
+    float: left;
+    border-right: 2px solid #be952b;
+    margin-right: 55px;
+}
+.about .about__left-box .left-box__title {
+    margin-top: 12px;
+    position: relative;
+    width: 150px;
+}
+.about .about__left-box .left-box__title:after {
+    position: absolute;
+    content: "";
+    right: 5px;
+    top: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+}
+.about .about__left-box img {
+    margin-top: 160px;
+}
+
+.about .about__right-box {
+    width: 90%;
+}
+.about .about__right-box .right-box__content {
+    margin-top: 12px;
+
+    font-family: NB Akademie Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+    /* or 113% */
+
+    color: #ffffff;
+}
+
+.about .about__right-box .right-box--btn {
+    width: 209px;
+    height: 51px;
+
+    margin-top: 140px;
+}
+
+/* About Style End */
+
+/* What we do Style Start */
+.what {
+    padding: 58px 30px 73px 30px;
+}
+.what .what__top,
+.what .what__bottom {
+    width: 100%;
+    height: 472px;
+}
+
+.what .what__top {
+    background-image: url("../img/what-img-1.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.what .what__bottom {
+    background-image: url("../img/what-img-2.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+
+    margin-top: 41px;
+}
+.what .what__top--content {
+    width: 42%;
+    height: 100%;
+    padding-right: 51px;
+    border-right: 1px solid #000;
+}
+
+.what .what__top--content .title--content,
+.what .what__bottom--content .title--content {
+    width: 100px;
+}
+.what .what__top--content .title--content:after,
+.what .what__bottom--content .title--content:after {
+    position: absolute;
+    content: "";
+    top: 3px;
+    right: 0;
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.what .what__top--content .content__description {
+    width: 490px;
+    margin-top: 26px;
+
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+    /* or 113% */
+
+    color: #000000;
+}
+.what .what__top--content .content__detail {
+    width: 388px;
+    margin-top: 16px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+.what .what__top--content .content__detail span {
+    display: none;
+}
+
+.what .what__bottom {
+    display: block;
+}
+.what .what__bottom .what__bottom--content {
+    width: 42%;
+    height: 100%;
+    float: right;
+
+    padding-left: 30px;
+    padding-right: 78px;
+
+    border-left: 1px solid #000000;
+}
+.what .what__bottom .what__bottom--content .content__description {
+    width: 431px;
+    height: 254px;
+
+    margin-top: 24px;
+
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+}
+/* What we do Style End */
+
+/* Offer Style Start */
+.offer {
+    width: 100%;
+    height: 632px;
+    background-color: #000000;
+    padding: 53px 30px 45px 30px;
+
+    color: white;
+}
+.offer .offer__title {
+    width: 447px;
+    height: 136px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 65px;
+    line-height: 65px;
+
+    color: #ffffff;
+}
+.offer .offer__description {
+    display: none;
+
+    width: 332px;
+    height: 141px;
+
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 26px;
+
+    margin-top: 20px;
+}
+.offer .offer__list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 19px;
+    align-items: flex-end;
+
+    width: 100%;
+}
+.offer .offer__list > .offer__list-item {
+    width: calc((100% - (19px * 3)) / 4);
+    height: 228px;
+    border: 1px solid #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 15px 25px;
+    margin-top: 52px;
+}
+.offer .offer__list > .offer__list-item:first-child {
+    width: 331px;
+    height: 346px;
+}
+
+.offer .offer__list > .offer__list-item .item__content {
+    width: 267px;
+    height: 125px;
+
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+    /* or 113% */
+
+    color: #ffffff;
+}
+.offer .offer__list > .offer__list-item .item__stt {
+    position: relative;
+    width: 100%;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 50px;
+    /* or 312% */
+
+    color: #ffffff;
+}
+.offer .offer__list > .offer__list-item .item__stt:after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    right: 0;
+    top: calc((50px - 8px) / 2);
+
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.offer .offer__slider {
+    display: none;
+    margin-top: 23px;
+    list-style: none;
+}
+.offer .offer__slider li {
+    display: inline-block;
+    margin-right: 5px;
+    padding-right: 10px;
+}
+.offer .offer__slider li a {
+    position: relative;
+    color: #ffffff;
+}
+.offer .offer__slider li a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+.offer .offer__text {
+    width: 330px;
+    height: 209px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    margin-top: 47px;
+}
+/* Offer Style End */
+
+/* Who We Are Style Start */
+.who {
+    padding: 58px 30px 73px 30px;
+    min-height: 100px;
+}
+.who__img-mobile {
+    display: none;
+    width: 100%;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #000000;
+}
+.who__img-mobile img {
+    width: 100%;
+}
+.who .who__top,
+.who .who__bottom {
+    width: 100%;
+    min-height: 472px;
+}
+
+.who .who__top {
+    background-image: url("../img/who-img-1.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.who .who__bottom {
+    background-image: url("../img/who-img-2.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+
+    margin-top: 41px;
+}
+.who .who__top--content {
+    width: 42%;
+    height: 100%;
+    padding-right: 51px;
+    border-right: 1px solid #000;
+}
+
+.who .who__top--content .title--content,
+.who .who__bottom--content .title--content {
+    width: 100px;
+}
+.who .who__top--content .title--content:after,
+.who .who__bottom--content .title--content:after {
+    position: absolute;
+    content: "";
+    top: 3px;
+    right: 0;
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.who .who__top--content .content__description {
+    width: 490px;
+    margin-top: 26px;
+
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+    /* or 113% */
+
+    color: #000000;
+}
+.who .who__top--content .content__detail {
+    width: 388px;
+    margin-top: 16px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.who .who__bottom {
+    display: block;
+}
+.who .who__bottom .who__bottom--content {
+    width: 42%;
+    height: 100%;
+    float: right;
+
+    padding-left: 30px;
+    padding-right: 78px;
+
+    border-left: 1px solid #000000;
+}
+.who .who__bottom .who__bottom--content .content__description {
+    width: 431px;
+    height: 254px;
+
+    margin-top: 24px;
+
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+}
+/* Who We Are Style End */
+
+/* Footer Style Start */
+.footer {
+    width: 100%;
+    min-height: 1000px;
+
+    background-color: #000000;
+}
+
+.footer .footer__get {
+    width: 100%;
+    padding: 52px 36px 100px 36px;
+    color: #ffffff;
+}
+.footer .footer__get-top {
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 61px;
+}
+.footer .footer__get-top h4.title--get-top {
+    position: relative;
+    width: 155px;
+    color: #ffffff;
+}
+.footer .footer__get-top h4.title--get-top:after {
+    position: absolute;
+    content: "";
+    top: 3px;
+    right: 0;
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.footer .footer__get-top h1.get-top__message {
+    font-weight: 500;
+    font-size: 65px;
+    line-height: 65px;
+
+    margin-top: 25px;
+}
+.footer .footer__get-bottom {
+    padding-top: 39px;
+    padding-bottom: 100px;
+}
+.footer .footer__get-bottom p.get-bottom__infor {
+    float: left;
+    width: 474px;
+    height: 210px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+
+    margin-top: 39px;
+    margin-right: 97px;
+}
+.footer .footer__get-bottom form.get-bottom__form {
+    float: right;
+    border-left: 1px solid #be952b;
+
+    padding-left: 42px;
+    padding-right: 20px;
+    padding-top: 39px;
+    width: 55%;
+}
+.footer .footer__get-bottom form.get-bottom__form .wrap-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.footer .footer__get-bottom form.get-bottom__form .wrap-box .form-control {
+    width: 100%;
+}
+
+.footer .footer__get-bottom form.get-bottom__form .wrap-box .form-control input {
+    width: 100%;
+    border: 1px solid #ffffff;
+
+    padding: 15px 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.footer .footer__get-bottom form.get-bottom__form .form-control textarea {
+    width: 100%;
+
+    padding: 15px 20px;
+
+    font-family: NB Akademie Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+}
+.footer .footer__get-bottom form.get-bottom__form button.btn--submit {
+    width: 100%;
+    padding: 15px 0;
+}
+.footer .footer__list {
+    float: left;
+    width: 100%;
+
+    margin-top: 102px;
+    padding: 26px 50px 45px 50px;
+
+    border-top: 1px solid #be952b;
+    background: #000;
+    color: #ffffff;
+}
+.footer .footer__list ul {
+    list-style: none;
+}
+.footer .footer__list ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+.footer .footer__list ul li:last-child {
+    float: right;
+}
+.footer .footer__list ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+/* Footer Style End
+
+/* Responsive */
+
+/* For tablet */
+@media only screen and (max-width: 768px) {
+}
+
+/* For mobile */
+@media only screen and (max-width: 415px) {
+    .header {
+        background-image: url("../img/banner-mobile.jpg");
+        padding: 15px;
+    }
+    .header .header__topnav .topnav__subnav {
+        display: none;
+    }
+    .header .header__description {
+        width: 332px;
+        height: 109px;
+        left: 25px;
+        top: 300px;
+
+        font-size: 28px;
+        line-height: 34px;
+        /* or 108% */
+    }
+    .header .header--btn {
+        position: absolute;
+        width: 85%;
+        left: 25px;
+        top: 472px;
+    }
+    .header .header--btn::after {
+        position: absolute;
+        content: "";
+        top: 90px;
+        left: -5px;
+        width: 105%;
+        height: 1px;
+        background-color: white;
+    }
+    .container header.header {
+        order: 1;
+    }
+    .container section.offer {
+        order: 2;
+    }
+    .container section.what {
+        order: 3;
+    }
+    .container section.about {
+        order: 4;
+    }
+    .container section.who {
+        order: 5;
+    }
+    .container footer {
+        order: 6;
+    }
+
+    .offer {
+        height: 840px;
+        width: 1000px;
+        /* overflow-x: hidden; */
+    }
+    .offer .offer__title {
+        width: 332px;
+        height: 29px;
+
+        font-size: 28px;
+        line-height: 28px;
+
+        color: #ffffff;
+    }
+    .offer .offer__list {
+        display: inline-flex;
+        flex-wrap: nowrap;
+
+        width: 100%;
+    }
+    .offer .offer__list > .offer__list-item:first-child {
+        width: 307px;
+        height: 228px;
+    }
+    .offer .offer__list > .offer__list-item {
+        width: 307px;
+        height: 228px;
+    }
+    .offer .offer__list > .offer__list-item .item__content {
+        width: 267px;
+        height: 125px;
+
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+        /* or 113% */
+
+        color: #ffffff;
+    }
+    .offer .offer__description {
+        display: block;
+    }
+    .offer .offer__slider {
+        display: block;
+    }
+
+    .what {
+        padding: 58px 20px 0px 20px;
+        min-height: 800px;
+        position: relative;
+    }
+    .what:after {
+        position: absolute;
+        content: "";
+        top: 75vw;
+        left: 6%;
+        width: 88%;
+        height: 1px;
+
+        background-color: red;
+    }
+    .what .what__top {
+        background-position: top;
+        background-size: 100%;
+        padding-top: 70vw;
+        width: 100%;
+    }
+    .what .what__top--content {
+        width: 116%;
+        border: none;
+    }
+    .what .what__top--content .content__description {
+        width: 100%;
+        height: 141px;
+        font-size: 4.819vw;
+        line-height: 26px;
+    }
+    .what .what__top--content .content__detail {
+        margin-top: -20px;
+        width: 100%;
+    }
+    .what .what__bottom {
+        background: none;
+        display: none;
+    }
+    .what .what__top--content .content__detail span {
+        display: block;
+    }
+
+    .about {
+        padding: 48px 25px 60px 25px;
+    }
+    .about__chart {
+        display: block;
+    }
+    .about .about__left-box {
+        width: 100%;
+        float: left;
+        border: none;
+    }
+    .about .about__left-box .left-box__title {
+        margin-top: 40px;
+        width: 200px;
+        visibility: hidden;
+    }
+    .about .about__left-box .left-box__title:before {
+        font-size: 14px;
+        line-height: 14px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "ABOUT WOLFBROOK Capital";
+        visibility: visible;
+    }
+    .about .about__left-box .left-box__title:after {
+        visibility: visible;
+    }
+    .about .about__left-box img {
+        display: none;
+    }
+    .about .about__right-box {
+        width: 100%;
+    }
+    .about .about__right-box .right-box__content {
+        font-size: 20px;
+        line-height: 26px;
+        visibility: hidden;
+        position: relative;
+    }
+    .about .about__right-box .right-box__content:after {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        content: "Wolfbrook Capital Limited is a wholly owned subsidiary of Wolfbrook Property Group Limited. Wolfbrook Capital Limited has been formed to raise funds from investors. Wolfbrook Capital Limited will lend those funds to other Wolfbrook Group members to be used in conjunction with bank funding and owners equity to fund the development of residential property developments.";
+        visibility: visible;
+    }
+    .about .about__right-box .right-box--btn {
+        display: none;
+    }
+
+    .who {
+        padding: 40px 25px 47px 25px;
+    }
+    .who__img-mobile {
+        display: block;
+    }
+    .who .who__top {
+        background: none;
+        margin-top: 40px;
+        min-height: 300px;
+    }
+    .who .who__top--content {
+        width: 100%;
+        padding-right: 0;
+        border: none;
+    }
+    .who .who__top--content .content__description {
+        width: 100%;
+        margin-top: 24px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .who .who__top--content .content__detail {
+        width: 100%;
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .who .who__bottom {
+        display: none;
+    }
+    .footer .footer__get {
+        width: 100%;
+        padding: 59px 25px 100px 25px;
+        color: #ffffff;
+    }
+    .footer .footer__get-top {
+        width: 100%;
+        border-bottom: 1px solid #ffffff;
+        padding-bottom: 31px;
+    }
+    .footer .footer__get-top h1.get-top__message {
+        font-size: 28px;
+        line-height: 28px;
+        visibility: hidden;
+        position: relative;
+    }
+    .footer .footer__get-top h1.get-top__message::after {
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        content: "The offer in simple terms";
+        visibility: visible;
+    }
+    .footer .footer__get-bottom {
+        padding-top: 0;
+        padding-bottom: 100px;
+    }
+    .footer .footer__get-bottom p.get-bottom__infor {
+        width: 100%;
+        font-size: 20px;
+        line-height: 26px;
+        margin-top: 27px;
+        margin-right: 0;
+    }
+    .footer .footer__get-bottom form.get-bottom__form {
+        background-color: black;
+        width: 100%;
+        float: left;
+        border: none;
+        padding: 0 0 100px 0;
+    }
+    .footer .footer__list {
+        margin-top: 0;
+        padding: 24px 25px;
+        border-top: 1px solid #be952b;
+        background: #000;
+        color: #ffffff;
+    }
+    .footer .footer__list ul li {
+        margin-left: 0px;
+    }
+    .footer .footer__list ul li:nth-child(1),
+    .footer .footer__list ul li:nth-child(2) {
+        display: none;
+    }
+}
