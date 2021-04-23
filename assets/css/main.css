@@ -906,7 +906,7 @@ body {
     .offer .offer__list > .offer__list-item {
         width: 307px;
         min-height: 228px;
-        transition: all 2s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
     .offer .offer__list > .offer__list-item .item__content {
         width: 267px;
