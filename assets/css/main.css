@@ -367,10 +367,11 @@ body {
     align-items: flex-end;
 
     width: 100%;
+    height: 400px;
 }
 .offer .offer__list > .offer__list-item {
     width: calc((100% - (19px * 3)) / 4);
-    height: 228px;
+    min-height: 228px;
     border: 1px solid #ffffff;
 
     display: flex;
@@ -380,6 +381,10 @@ body {
 
     padding: 15px 25px;
     margin-top: 52px;
+
+    cursor: pointer;
+
+    transition: all 0.5s ease-in-out;
 }
 .offer .offer__list > .offer__list-item:first-child {
     width: 331px;
@@ -396,6 +401,16 @@ body {
     /* or 113% */
 
     color: #ffffff;
+}
+.offer .offer__list > .offer__list-item .item__description {
+    width: 100%;
+
+    min-height: 0px;
+    line-height: 20px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .offer .offer__list > .offer__list-item .item__stt {
     position: relative;
@@ -440,6 +455,7 @@ body {
     left: 0;
     width: 8px;
     height: 8px;
+
     background-color: transparent;
     border: 1px solid #ffffff;
     border-radius: 50%;
@@ -467,6 +483,7 @@ body {
     display: none;
     width: 100%;
     padding-bottom: 40px;
+
     border-bottom: 1px solid #000000;
 }
 .who__img-mobile img {
@@ -495,6 +512,7 @@ body {
 .who .who__top--content {
     width: 42%;
     min-height: 450px;
+
     padding-right: 51px;
     border-right: 1px solid #000;
 }
@@ -887,11 +905,12 @@ body {
     }
     .offer .offer__list > .offer__list-item {
         width: 307px;
-        height: 228px;
+        min-height: 228px;
+        transition: all 2s ease-in-out;
     }
     .offer .offer__list > .offer__list-item .item__content {
         width: 267px;
-        height: 125px;
+        min-height: 125px;
 
         font-weight: 500;
         font-size: 28px;
